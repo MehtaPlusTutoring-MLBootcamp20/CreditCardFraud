@@ -147,3 +147,26 @@ p{
 	width: 100%;
 	height: 100%;
 }
+
+.pred button, botton:focus {
+  display: block;
+  background-color: #4A7CE5;
+  color: #EFECF2;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Roboto';
+}
+
+.pred button.active {
+  background-color: #4A7CE5;
+  color: #EFECF2;
+  font-family: 'Roboto';
+}
