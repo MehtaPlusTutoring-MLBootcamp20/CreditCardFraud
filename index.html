@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<head>
+    <title>Analyzing Supervised Learning Methods for Credit Card Fraud Detection</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+	<div class = "outter">
+		
+		<div style="vertical-align:bottom;">
+			<div style="min-height:100px"></div>
+			<div class = "left">
+				<h1>Analyzing Supervised Learning Methods for Credit Card Fraud Detection</h1>
+				<h2>Jennifer Gao, Karen Situ, Grace Tian</h2>
+			</div>
+			
+			<div class = "left">
+				<h3>Abstract!</h3>
+				<p>Insert abstract paragraph here Insert abstract paragraph here Insert abstract paragraph here Insert abstract paragraph here Insert abstract paragraph here Insert abstract paragraph hereInsert abstract paragraph here
+				Insert abstract paragraph here Insert abstract paragraph here Insert abstract paragraph here Insert abstract paragraph hereInsert abstract paragraph here 
+				Insert abstract paragraph here Insert abstract paragraph hereInsert abstract paragraph here Insert abstract paragraph here 
+				Insert abstract paragraph here Insert abstract paragraph here Insert abstract paragraph here</p>
+				<button onclick="location.href='https://github.com/ksitu0/creditcard'" type="button">Github Repo</button> 
+				<button onclick="window.open('Credit_Card_Fraud.pdf')" type="button">Paper</button>
+			</div>
+		</div>
+		
+		<div class = "centerTwo">
+			<div class="tab">
+				<button onclick="openThing(event, 'PosterID')" id="defaultOpen" class="tablinks">Poster</button>
+				<button onclick="openThing(event, 'DemoID')" class="tablinks" >Watch the Demo</button>
+			</div>
+			
+			<div class = "tabRight">
+				<div id="PosterID" class="tabcontent">
+					<img src="ccposter.png" alt="Poster">
+				</div>
+
+				<div id="DemoID" class="tabcontent">
+					<div class="videoWrapper">
+						<iframe class="videoDemo" style="overflow:auto; min-height:400px; width:100%" src="https://www.youtube.com/embed/miHFzpYZoYk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<script>
+			function openThing(evt, name) {
+			  var i, tabcontent, tablinks;
+			  tabcontent = document.getElementsByClassName("tabcontent");
+			  for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			  }
+			  tablinks = document.getElementsByClassName("tablinks");
+			  for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			  }
+			  document.getElementById(name).style.display = "block";
+			  evt.currentTarget.className += " active";
+			}
+
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+			</script>
+		</div>
+		
+		<div style="width: 72%; float: left;overflow: auto;">
+			<script src="https://gist.github.com/HaripriyaMehta/f9403a041cd14ca145dc15619faf3ec0.js"></script>
+		</div>
+		
+		<div style="width: 25%; float: right;overflow: auto; padding-top: 40px;">
+			<p style="font-size: 24px; font-family:calibri">View Our Model Predictions</p>
+		</div>
+	</div>
+</body>  
+</html>
