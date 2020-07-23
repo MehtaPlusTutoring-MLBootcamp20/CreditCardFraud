@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
-<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <head>
     <title>Analyzing Supervised Learning Methods for Credit Card Fraud Detection</title>
     <meta charset="utf-8">
@@ -8,26 +10,26 @@
     
 </head>
 <body>
-	<div class = "outter">
-		
-		<div style="vertical-align:bottom;">
-			<div style="min-height:100px"></div>
+		<div style="vertical-align:bottom; background-color:#1F3A7B; padding-top:11%; padding-bottom:6%; overflow:auto">
 			<div class = "left">
 				<h1>Analyzing Supervised Learning Methods for Credit Card Fraud Detection</h1>
 				<h2>Jennifer Gao, Karen Situ, Grace Tian</h2>
 			</div>
 			
 			<div class = "left">
-				<h3>Abstract!</h3>
-				<p>Insert abstract paragraph here Insert abstract paragraph here Insert abstract paragraph here Insert abstract paragraph here Insert abstract paragraph here Insert abstract paragraph hereInsert abstract paragraph here
-				Insert abstract paragraph here Insert abstract paragraph here Insert abstract paragraph here Insert abstract paragraph hereInsert abstract paragraph here 
-				Insert abstract paragraph here Insert abstract paragraph hereInsert abstract paragraph here Insert abstract paragraph here 
-				Insert abstract paragraph here Insert abstract paragraph here Insert abstract paragraph here</p>
-				<button onclick="location.href='https://github.com/ksitu0/creditcard'" type="button">Github Repo</button> 
-				<button onclick="window.open('Credit_Card_Fraud.pdf')" type="button">Paper</button>
+				<h3>Abstract</h3>
+				<p>Credit card fraud has been a growing issue both in the United States and worldwide. Unfortunately, the countless losses caused by fraudulent 
+				transactions are usually paid for by the sales companies and credit card companies. This project analyzes supervised machine learning models for 
+				identifying fraudulent transactions based on the transaction information. In doing so, we have worked with three models: decision tree, KNN, and 
+				random forest, analyzing both the individual models and all possible combinations of models. A final fraud score is calculated as a probability 
+				of fraud based on all models, which achieved a recall of 82% with a precision of 84%. Our final model is a probability and not an absolute 
+				decision of fraud, which can allow credit card companies to factor in personal concerns when deciding their course of action in response to possible future frauds.</p>
+				<button onclick="location.href='https://github.com/ksitu0/creditcard'" type="button" id="repoButton">Github Repo</button> 
+				<button onclick="window.open('Credit_Card_Fraud.pdf')" type="button" id="paperButton">Paper</button>
 			</div>
 		</div>
 		
+	<div class = "bottom">
 		<div class = "centerTwo">
 			<div class="tab">
 				<button onclick="openThing(event, 'PosterID')" id="defaultOpen" class="tablinks">Poster</button>
@@ -41,7 +43,7 @@
 
 				<div id="DemoID" class="tabcontent">
 					<div class="videoWrapper">
-						<iframe class="videoDemo" style="overflow:auto; min-height:400px; width:100%" src="https://www.youtube.com/embed/miHFzpYZoYk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe class="videoDemo" style="overflow:auto; min-height:400px; width:100%" src="https://www.youtube.com/embed/Y0GzHw5q4zw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
@@ -70,7 +72,7 @@
 		</div>
 		
 		<div style="width: 25%; float: right;overflow: auto; padding-top: 40px;">
-			<p style="font-size: 24px; font-family:calibri">View Our Model Predictions</p>
+			<p style="font-size:24px; font-family:'Roboto'; color:#1F3A7B">View Our Model Predictions</p>
 		</div>
 	</div>
 </body>  
